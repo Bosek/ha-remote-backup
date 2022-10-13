@@ -151,7 +151,7 @@ for backup_filename in get_backups_filenames(ssh, source_path_backups):
         os.remove(local_name)
         quit()
     print("Backup transferred")
-    #delete_backups(ssh, source_path, source_path_backups)
+    delete_backups(ssh, source_path, source_path_backups)
 
 entities = client.get_entities()
 if "input_datetime" in entities.keys():
